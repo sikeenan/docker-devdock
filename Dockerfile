@@ -1,9 +1,13 @@
-# DOCKER
-# DEVBOX
-#
 FROM ubuntu:18.04
 
 USER  root
+
+ENV BUILD_MAINTAINER="simon.keenan@computacenter.com"
+ENV BUILD_COMPANY="Computacenter UK LTD"
+ENV BUILD_DEVELOPER="sikeenan@icloud.com"
+ENV BUILD_ERSION="201911"
+ENV BUILD_NAME="devdock"
+ENV BUILD_ROI="NOTSET"
 
 ENV   MYSQL_HOSTNAME 172.17.0.1
 ENV   MYSQL_PORT 3306
