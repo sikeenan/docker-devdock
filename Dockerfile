@@ -6,7 +6,7 @@ ENV BUILD_MAINTAINER="simonjkeenan@gmail.com"
 ENV BUILD_DEVELOPER="simonjkeenan@gmail.com"
 ENV BUILD_VERSION="custom"
 ENV BUILD_NAME="devdock"
-ENV BUILD_LOC="Docker.IO"
+ENV BUILD_LOC="Docker Local"
 ENV BUILD_GITURL="https://github.com/sikeenan/docker-devdock.git"
 
 ENV   PYTHONIOENCODING=utf-8:surrogateescape
