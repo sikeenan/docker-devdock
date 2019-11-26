@@ -2,12 +2,12 @@ FROM ubuntu:18.04
 
 USER  root
 
-ENV BUILD_MAINTAINER="simon.keenan@computacenter.com"
-ENV BUILD_COMPANY="Computacenter UK LTD"
-ENV BUILD_DEVELOPER="sikeenan@icloud.com"
-ENV BUILD_ERSION="201911"
+ENV BUILD_MAINTAINER="simonjkeenan@gmail.com"
+ENV BUILD_DEVELOPER="simonjkeenan@gmail.com"
+ENV BUILD_VERSION="custom"
 ENV BUILD_NAME="devdock"
-ENV BUILD_ROI="NOTSET"
+ENV BUILD_LOC="Docker.IO"
+ENV BUILD_GITURL="https://github.com/sikeenan/docker-devdock.git"
 
 ENV   PYTHONIOENCODING=utf-8:surrogateescape
 
@@ -49,10 +49,6 @@ USER developer
 
 WORKDIR /development
 
-EXPOSE 5000
-EXPOSE 4440
-EXPOSE 80
-EXPOSE 8080 
-EXPOSE 443
+EXPOSE 5000 4440 8080 9000
 
 ENTRYPOINT /docker-entrypoint.sh

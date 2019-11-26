@@ -1,2 +1,2 @@
-# Build the devdock container, assign "local" tag.
-docker build -t devdock:local .
+# Build the devdock container, assign "custom" tag.
+docker build -t devdock:custom .

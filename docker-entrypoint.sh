@@ -16,12 +16,16 @@ replaceconfig () {
     fi
 }
 
+# just the date/time we started up
 echo "$(date): Container started."
 
-if [ -f /stuff-todo-when-starting.sh ]
+# If you want to do something each time you re-make the container, using your persistent volum
+# then make sure you update this shell script with you reqirements.
+if [ -f /development/stuff-todo-when-starting.sh ]
 then
     chmod +x /stuff-todo-when-starting.sh
     sh -x /stuff-todo-when-starting.sh
 fi
 
+# sleep forever
 sleep infinity
