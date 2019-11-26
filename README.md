@@ -15,6 +15,6 @@ powershell$ docker exec -ti devdock bash
 
 ## Connecting IDE to Container
 
-- Download and installed VSCODE.
+- Download and install VSCODE (visual studio code)
 - Download the Docker Extension
 - Right click container, and install vscode.
