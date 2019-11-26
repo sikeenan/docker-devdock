@@ -9,26 +9,6 @@ ENV BUILD_ERSION="201911"
 ENV BUILD_NAME="devdock"
 ENV BUILD_ROI="NOTSET"
 
-ENV   MYSQL_HOSTNAME 172.17.0.1
-ENV   MYSQL_PORT 3306
-ENV   MYSQL_USERNAME archangel
-ENV   MYSQL_PASSWORD mydefpass1
-ENV   MYSQL_ROOT_PASSWORD mydefpass1
-ENV   MYSQL_DBNAME archangel
-
-ENV   MSSQL_HOSTNAME 172.17.0.1
-ENV   MSSQL_PORT 1433
-ENV   MSSQL_USERNAME SA
-ENV   MSSQL_PASSWORD mydefpass1
-ENV   MSSQL_DBNAME ITSM_Request_Orchestration
-ENV   MSSQL_DRIVER pyodbc
-ENV   MSSQL_SEARCH None
-
-ENV   RUNDECK_HOSTNAME 172.17.0.1
-ENV   RUNDECK_PORT 4440
-ENV   RUNDECK_CONNECTION http
-ENV   RUNDECK_TOKEN notoken
-
 ENV   PYTHONIOENCODING=utf-8:surrogateescape
 
 ENV   LANG C.UTF-8
@@ -53,17 +33,9 @@ RUN	apt-get update && \
             wget && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN   curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && \   
-      curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list > /etc/apt/sources.list.d/mssql-release.list && \
-      apt-get update && \
-            ACCEPT_EULA=Y apt-get install msodbcsql17 && \
-      rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 RUN   pip3 install \
             configparser \
-            pymssql \
             pymysql \
-            pyodbc \
             requests \
             urllib3
 
