@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM sikeenan/ccbasepyth:201912
 
 USER  root
 
