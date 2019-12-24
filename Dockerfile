@@ -1,10 +1,10 @@
-FROM sikeenan/ccbasepyth:201912
+FROM sikeenan/ccbasepyth:202001
 
 USER  root
 
 ENV BUILD_MAINTAINER="simonjkeenan@gmail.com"
 ENV BUILD_DEVELOPER="simonjkeenan@gmail.com"
-ENV BUILD_VERSION="custom"
+ENV BUILD_VERSION="202001"
 ENV BUILD_NAME="devdock"
 ENV BUILD_LOC="Docker Local"
 ENV BUILD_GITURL="https://github.com/sikeenan/docker-devdock.git"
