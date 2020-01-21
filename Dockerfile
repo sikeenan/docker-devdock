@@ -1,4 +1,5 @@
-FROM sikeenan/ccbasepyth:202001
+ARG MYAPP_IMAGE=ubuntu:18.04
+FROM $MYAPP_IMAGE
 
 USER  root
 
